@@ -1,0 +1,16 @@
+apply plugin: 'eclipse'
+//eclipse configuration
+subprojects {
+	apply plugin: 'eclipse'
+
+	eclipse.classpath.downloadSources=true
+
+    cleanEclipse {
+    	doLast { project.delete ".settings", "bin", "build.properties" }
+    }
+}
+cleanEclipse {
+	doLast {
+    	project.delete ".settings", "bin", "build.properties"
+    }
+}
