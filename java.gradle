@@ -6,6 +6,7 @@ subprojects {
 			java { srcDir  'src' }
             resources { srcDir 'resources'}
             output.classesDir = "${output.classesDir}/${project.name}"
+            output.resourcesDir = "${output.resourcesDir}/${project.name}"
 		}
 		test {
 			java { srcDir 'tests/src' }
